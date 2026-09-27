@@ -1,0 +1,7 @@
+subset,evaluator,n,n_harmful,n_safe,fpr,recall
+all,HB-Cls,412,134,278,8.6,77.6
+all,GPT-4o-mini,412,134,278,45.7,81.3
+all,LlamaGuard-3,412,134,278,40.6,79.9
+non_copyright,HB-Cls,296,110,186,12.9,86.4
+non_copyright,GPT-4o-mini,296,110,186,45.7,87.3
+non_copyright,LlamaGuard-3,296,110,186,24.2,77.3

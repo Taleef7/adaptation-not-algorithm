@@ -1,0 +1,15 @@
+method,seed,HB-Cls,GPT-4o-mini,LlamaGuard-3
+base_fp16,-,73.25,82.50,94.00
+lora,main,15.50,28.50,49.25
+lora,seed0,54.75,88.25,87.00
+lora,seed123,59.50,87.00,89.00
+safelora,main,15.00,46.75,45.75
+safelora,seed0,63.50,90.75,88.00
+safelora,seed123,63.25,92.25,90.25
+
+protection_LoRA_minus_SafeLoRA,seed,HB-Cls,GPT-4o-mini,LlamaGuard-3
+delta,main,0.50,-18.25,3.50
+delta,seed0,-8.75,-2.50,-1.00
+delta,seed123,-3.75,-5.25,-1.25
+delta,mean,-4.00,-8.67,0.42
+delta,sd,4.63,8.41,2.67

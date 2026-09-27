@@ -1,0 +1,2 @@
+judge,n,n_safe,acc,precision,recall,fpr,fpr_ci_low,fpr_ci_high
+gpt-4o-mini+StrongREJECT,412,278,71.60,53.62,94.03,39.21,33.65,45.06

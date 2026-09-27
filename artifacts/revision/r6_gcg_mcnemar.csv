@@ -1,0 +1,16 @@
+family,contrast,n,delta_pp,only_A,only_B,mcnemar_exact_p
+gemma2,lora-base_fp16,100,13.999999999999998,24,10,0.0243
+gemma2,fft-lora,100,13.0,27,14,0.0596
+gemma2,fft-base_fp16,100,27.0,34,7,0.0
+llama31,lora-base_fp16,100,8.000000000000002,19,11,0.2005
+llama31,fft-lora,100,17.0,30,13,0.0137
+llama31,fft-base_fp16,100,25.0,32,7,0.0001
+phi4,lora-base_fp16,100,20.0,26,6,0.0005
+phi4,fft-lora,100,18.0,31,13,0.0096
+phi4,fft-base_fp16,100,38.0,43,5,0.0
+qwen25,lora-base_fp16,100,-28.999999999999996,10,39,0.0
+qwen25,fft-lora,100,17.0,31,14,0.0161
+qwen25,fft-base_fp16,100,-12.0,17,29,0.1038
+qwen3,lora-base_fp16,100,25.0,31,6,0.0
+qwen3,fft-lora,100,-2.0000000000000018,16,18,0.8642
+qwen3,fft-base_fp16,100,23.0,31,8,0.0003

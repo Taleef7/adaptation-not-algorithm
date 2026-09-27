@@ -1,0 +1,9 @@
+hf_release/stage/
+__pycache__/
+*.pyc
+outputs/
+controlled_data/
+.env
+# regenerated figure formats (PNG copies are tracked)
+artifacts/revision/figures/*.pdf
+artifacts/revision/figures/*.svg

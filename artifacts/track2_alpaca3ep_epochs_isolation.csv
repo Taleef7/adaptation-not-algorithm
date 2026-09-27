@@ -1,0 +1,13 @@
+family,attack,benchmark,lora_asr,fft_asr,delta_lora_minus_fft,n
+llama31,DeepInception,harmbench,8.00,10.25,-2.25,400
+llama31,DeepInception,jbb,19.00,17.00,2.00,100
+llama31,ArtPrompt,harmbench,22.00,22.50,-0.50,400
+llama31,ArtPrompt,jbb,13.00,20.00,-7.00,100
+qwen3,DeepInception,harmbench,15.00,33.50,-18.50,400
+qwen3,DeepInception,jbb,28.00,36.00,-8.00,100
+qwen3,ArtPrompt,harmbench,17.25,6.25,11.00,400
+qwen3,ArtPrompt,jbb,8.00,4.00,4.00,100
+gemma2,DeepInception,harmbench,19.50,7.75,11.75,400
+gemma2,DeepInception,jbb,31.00,21.00,10.00,100
+gemma2,ArtPrompt,harmbench,31.25,28.00,3.25,400
+gemma2,ArtPrompt,jbb,27.00,14.00,13.00,100

@@ -1,0 +1,6 @@
+family,family_display,kruskal_H,p_value,n_per_config,significant_0_05
+gemma2,Gemma-2,12.219150,0.015794,6,True
+llama31,Llama-3.1,1.053626,0.901558,6,False
+qwen3,Qwen-3,3.516819,0.475326,6,False
+phi4,Phi-4,18.944035,0.000806,6,True
+qwen25,Qwen-2.5,12.128545,0.016421,6,True

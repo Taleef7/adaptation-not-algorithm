@@ -1,0 +1,5 @@
+asr_evaluator,orr_judge,n,spearman_rho,spearman_p,shares_judge_across_axes
+HB-Cls,GPT-4o-mini (regen 4bit),25,-0.5795,0.0024,False
+HB-Cls,Ministral-3-14B (regen 4bit),25,-0.6213,0.00092,False
+GPT-4o-mini,GPT-4o-mini (regen 4bit),25,-0.6924,0.00013,True
+GPT-4o-mini,Ministral-3-14B (regen 4bit),25,-0.7654,1e-05,False

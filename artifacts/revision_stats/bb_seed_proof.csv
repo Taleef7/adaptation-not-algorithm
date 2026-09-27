@@ -1,0 +1,13 @@
+paradigm,attack,dataset,seed,asr_pct,n,status,path
+black-box,PAIR,JBB,3407,9.0,100,ok,toolkits/HarmBench/results_jbb/PAIR/llama31_lora_custom_pair_experiment/results/llama31_lora_custom.json
+black-box,PAIR,JBB,0,12.0,100,ok,toolkits/HarmBench/results_jbb/PAIR/llama31_lora_seed0_custom_pair_experiment/results/llama31_lora_seed0_custom.json
+black-box,PAIR,JBB,123,14.0,100,ok,toolkits/HarmBench/results_jbb/PAIR/llama31_lora_seed123_custom_pair_experiment/results/llama31_lora_seed123_custom.json
+black-box,DeepInception,HarmBench,3407,13.25,400,ok,toolkits/HarmBench/results/DeepInception/llama31_lora_custom/results/llama31_lora_custom.json
+black-box,DeepInception,HarmBench,0,19.5,400,ok,toolkits/HarmBench/results/DeepInception/llama31_lora_seed0_custom/results/llama31_lora_seed0_custom.json
+black-box,DeepInception,HarmBench,123,23.5,400,ok,toolkits/HarmBench/results/DeepInception/llama31_lora_seed123_custom/results/llama31_lora_seed123_custom.json
+black-box,ArtPrompt,HarmBench,3407,14.75,400,ok,toolkits/HarmBench/results/ArtPrompt/llama31_lora_custom/results/llama31_lora_custom.json
+black-box,ArtPrompt,HarmBench,0,18.0,400,ok,toolkits/HarmBench/results/ArtPrompt/llama31_lora_seed0_custom/results/llama31_lora_seed0_custom.json
+black-box,ArtPrompt,HarmBench,123,15.75,400,ok,toolkits/HarmBench/results/ArtPrompt/llama31_lora_seed123_custom/results/llama31_lora_seed123_custom.json
+white-box,AutoDAN,HarmBench,3407,15.5,400,ok,toolkits/HarmBench/results/AutoDAN/llama31_lora_custom/results/llama31_lora_custom.json
+white-box,AutoDAN,HarmBench,0,54.75,400,ok,toolkits/HarmBench/results/AutoDAN/llama31_lora_seed0_custom/results/llama31_lora_seed0_custom.json
+white-box,AutoDAN,HarmBench,123,59.5,400,ok,toolkits/HarmBench/results/AutoDAN/llama31_lora_seed123_custom/results/llama31_lora_seed123_custom.json

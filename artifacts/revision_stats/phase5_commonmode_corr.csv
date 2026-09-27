@@ -1,0 +1,4 @@
+family,r_lora_fft,r_lora_qlora,r_qlora_fft
+llama31,0.59,-0.44,-0.848
+gemma2,0.863,0.961,0.952
+qwen3,0.58,-0.949,-0.51

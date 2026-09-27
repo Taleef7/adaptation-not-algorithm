@@ -1,0 +1,13 @@
+pair,subset,n,mean,sd,tost_p,equivalent,wilcoxon_p
+lora-fft,all_DI+AP,20,1.6,6.41,0.0142,True,0.2105
+lora-fft,ArtPrompt_only_deterministic,10,2.6,3.6175,0.0327,True,0.0352
+lora-fft,DeepInception_only_stochastic,10,0.6,8.4518,0.0671,False,0.8652
+lora-fft,all_minus_qwen25,16,0.2812,5.2177,0.0013,True,0.5517
+qlora-fft,all_DI+AP,20,-1.225,12.4818,0.096,False,0.9519
+qlora-fft,ArtPrompt_only_deterministic,10,-1.85,15.9753,0.2742,False,0.625
+qlora-fft,DeepInception_only_stochastic,10,-0.6,8.5336,0.0687,False,0.4766
+qlora-fft,all_minus_qwen25,16,-0.2344,13.1147,0.0833,False,0.7173
+lora-qlora,all_DI+AP,20,2.825,12.8632,0.2294,False,0.4548
+lora-qlora,ArtPrompt_only_deterministic,10,4.45,15.655,0.457,False,0.375
+lora-qlora,DeepInception_only_stochastic,10,1.2,9.9176,0.1282,False,1.0
+lora-qlora,all_minus_qwen25,16,0.5156,12.6986,0.0891,False,0.9175

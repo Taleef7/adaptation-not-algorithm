@@ -1,0 +1,16 @@
+evaluator,family,friedman_chi2,friedman_p,kruskal_H,kruskal_p
+HB-Cls,gemma2,19.04,0.0008,12.22,0.0158
+HB-Cls,llama31,4.64,0.3258,1.05,0.9016
+HB-Cls,qwen3,9.3,0.0541,3.52,0.4753
+HB-Cls,phi4,20.28,0.0004,18.94,0.0008
+HB-Cls,qwen25,10.75,0.0296,12.13,0.0164
+GPT-4o-mini,gemma2,20.93,0.0003,18.34,0.0011
+GPT-4o-mini,llama31,8.27,0.0823,2.91,0.5729
+GPT-4o-mini,qwen3,8.78,0.0668,4.4,0.355
+GPT-4o-mini,phi4,19.49,0.0006,17.83,0.0013
+GPT-4o-mini,qwen25,10.12,0.0385,6.31,0.1771
+LlamaGuard-3,gemma2,17.73,0.0014,3.26,0.5146
+LlamaGuard-3,llama31,3.87,0.4245,0.37,0.9849
+LlamaGuard-3,qwen3,7.96,0.0929,1.75,0.7818
+LlamaGuard-3,phi4,16.31,0.0026,11.16,0.0248
+LlamaGuard-3,qwen25,2.24,0.6915,0.09,0.999

@@ -1,0 +1,16 @@
+family,config,seed,learning_rate,per_device_train_batch_size,gradient_accumulation_steps,num_train_epochs,max_steps,warmup_ratio,warmup_steps,weight_decay,lr_scheduler_type,optim,fp16,bf16,lora_r,lora_alpha,lora_dropout,target_modules,checkpoint,adapter_error
+gemma2,lora,42,0.0002,2,4,1,-1,0.0,10,0.01,linear,adamw_torch,False,True,16.0,16.0,0.05,"down_proj,gate_proj,k_proj,o_proj,q_proj,up_proj,v_proj",models/gemma2-9b/gemma2-9b-it-lora-alpaca,
+gemma2,qlora,42,0.0002,2,4,1,-1,0.0,10,0.01,linear,paged_adamw_8bit,False,True,16.0,16.0,0.05,"down_proj,gate_proj,k_proj,o_proj,q_proj,up_proj,v_proj",models/gemma2-9b/gemma2-9b-it-qlora-alpaca,
+gemma2,fft,42,2e-05,2,4,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,models/gemma2-9b/gemma2-9b-it-fft-alpaca,
+llama31,lora,3407,0.0002,2,4,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,outputs/finetune/llama3.1/llama-3.1-8b-lora-alpaca,NO_ADAPTER_CFG
+llama31,qlora,42,0.0002,2,4,1,-1,0.0,10,0.01,linear,paged_adamw_8bit,False,True,16.0,16.0,0.0,"down_proj,gate_proj,k_proj,o_proj,q_proj,up_proj,v_proj",models/llama3.1/llama-3.1-8b-qlora-alpaca-hf,
+llama31,fft,42,2e-05,2,4,1,-1,0.0,10,0.01,linear,adamw_torch,False,True,,,,,outputs/finetune/llama3.1/llama-3.1-8b-fft-alpaca-hf-final,
+phi4,lora,3407,0.0002,1,8,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,outputs/finetune/phi-4/phi-4-lora-alpaca,NO_ADAPTER_CFG
+phi4,qlora,3407,0.0002,1,8,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,16.0,16.0,0.0,"down_proj,gate_up_proj,k_proj,o_proj,q_proj,v_proj",outputs/finetune/phi-4/phi-4-qlora-alpaca,
+phi4,fft,42,2e-05,2,1,1,-1,0.0,100,0.0,cosine,adamw_torch,False,True,,,,,models/phi-4/fft_alpaca,
+qwen25,lora,3407,0.0002,1,8,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,outputs/finetune/qwen2.5-14b/qwen2.5-14b-lora-alpaca,NO_ADAPTER_CFG
+qwen25,qlora,3407,0.0002,1,8,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,16.0,16.0,0.0,"down_proj,gate_proj,k_proj,o_proj,q_proj,up_proj,v_proj",models/qwen2.5-14b/qwen2.5-14b-qlora-alpaca,
+qwen25,fft,42,2e-05,2,1,1,-1,0.0,100,0.0,cosine,adamw_torch,False,True,,,,,models/qwen2.5-14b/fft_alpaca,
+qwen3,lora,3407,0.0002,2,4,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,outputs/finetune/qwen3-4b/qwen3-4b-lora-alpaca,NO_ADAPTER_CFG
+qwen3,qlora,42,0.0002,2,4,1,-1,0.0,10,0.01,linear,paged_adamw_8bit,False,True,16.0,16.0,0.0,"down_proj,gate_proj,k_proj,o_proj,q_proj,up_proj,v_proj",models/qwen3-4b/qwen3-4b-qlora-alpaca,
+qwen3,fft,42,2e-05,1,8,1,-1,0.0,10,0.01,linear,adamw_8bit,False,True,,,,,outputs/finetune/qwen3-4b/qwen3-4b-fft-alpaca,

@@ -1,0 +1,13 @@
+evaluator,evaluator_display,config,config_display,attack_subset,attacks,n_pairs,mean_delta_asr_pp,median_delta_asr_pp,wilcoxon_W,p_value,p_holm_12_tests,cohens_d_paired_delta,bootstrap_seed,bootstrap_n,ci95_low_pp,ci95_high_pp
+Llama-2-13b-cls,HB-Cls,base_4bit,Base 4-bit,black_box,PAIR+ArtPrompt+DeepInception,30,-0.555000,-0.125000,150.000000,0.347096,1.000000,-0.173739,20260520,10000,-1.700000,0.530000
+Llama-2-13b-cls,HB-Cls,lora,LoRA,black_box,PAIR+ArtPrompt+DeepInception,30,3.997000,4.625000,85.000000,0.007202,0.050411,0.539165,20260520,10000,1.363650,6.647000
+Llama-2-13b-cls,HB-Cls,qlora,QLoRA,black_box,PAIR+ArtPrompt+DeepInception,30,3.395000,2.000000,81.000000,0.005419,0.043353,0.513045,20260520,10000,1.131667,5.770125
+Llama-2-13b-cls,HB-Cls,fft,FFT,black_box,PAIR+ArtPrompt+DeepInception,30,3.350333,4.500000,127.500000,0.051514,0.206058,0.402721,20260520,10000,0.408783,6.267525
+GPT-4o-mini,GPT-4o-mini,base_4bit,Base 4-bit,black_box,PAIR+ArtPrompt+DeepInception,30,-0.176667,1.250000,206.000000,0.803534,1.000000,-0.027822,20260520,10000,-2.503458,2.006667
+GPT-4o-mini,GPT-4o-mini,lora,LoRA,black_box,PAIR+ArtPrompt+DeepInception,30,12.115333,13.500000,41.000000,0.000082,0.000981,0.962304,20260520,10000,7.675000,16.632033
+GPT-4o-mini,GPT-4o-mini,qlora,QLoRA,black_box,PAIR+ArtPrompt+DeepInception,30,6.956667,7.350000,93.500000,0.004246,0.038212,0.582103,20260520,10000,2.765000,11.141667
+GPT-4o-mini,GPT-4o-mini,fft,FFT,black_box,PAIR+ArtPrompt+DeepInception,30,11.928000,15.000000,66.000000,0.001052,0.011573,0.751858,20260520,10000,6.274867,17.428075
+LlamaGuard-3,LlamaGuard-3,base_4bit,Base 4-bit,black_box,PAIR+ArtPrompt+DeepInception,30,-0.850000,0.000000,170.500000,0.898888,1.000000,-0.136725,20260520,10000,-3.158542,1.266875
+LlamaGuard-3,LlamaGuard-3,lora,LoRA,black_box,PAIR+ArtPrompt+DeepInception,30,5.925000,4.000000,91.500000,0.011101,0.066605,0.528002,20260520,10000,2.049792,9.950000
+LlamaGuard-3,LlamaGuard-3,qlora,QLoRA,black_box,PAIR+ArtPrompt+DeepInception,30,4.716667,3.625000,94.500000,0.023161,0.115804,0.425401,20260520,10000,1.016667,8.925000
+LlamaGuard-3,LlamaGuard-3,fft,FFT,black_box,PAIR+ArtPrompt+DeepInception,30,7.841667,6.250000,81.000000,0.001829,0.018290,0.654065,20260520,10000,3.733125,12.133333

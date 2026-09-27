@@ -1,0 +1,16 @@
+family,config,seed,checkpoint,status
+gemma2,lora,42,models/gemma2-9b/gemma2-9b-it-lora-alpaca,ok
+gemma2,qlora,42,models/gemma2-9b/gemma2-9b-it-qlora-alpaca,ok
+gemma2,fft,42,models/gemma2-9b/gemma2-9b-it-fft-alpaca,ok
+llama31,lora,3407,outputs/finetune/llama3.1/llama-3.1-8b-lora-alpaca/checkpoint-5000,ok
+llama31,qlora,42,models/llama3.1/llama-3.1-8b-qlora-alpaca-hf,ok
+llama31,fft,42,outputs/finetune/llama3.1/llama-3.1-8b-fft-alpaca-hf-final/checkpoint-5000,ok
+phi4,lora,3407,outputs/finetune/phi-4/phi-4-lora-alpaca/checkpoint-4000,ok
+phi4,qlora,3407,outputs/finetune/phi-4/phi-4-qlora-alpaca/checkpoint-4000,ok
+phi4,fft,42,models/phi-4/fft_alpaca,ok
+qwen25,lora,3407,outputs/finetune/qwen2.5-14b/qwen2.5-14b-lora-alpaca/checkpoint-4000,ok
+qwen25,qlora,3407,models/qwen2.5-14b/qwen2.5-14b-qlora-alpaca,ok
+qwen25,fft,42,models/qwen2.5-14b/fft_alpaca,ok
+qwen3,lora,3407,outputs/finetune/qwen3-4b/qwen3-4b-lora-alpaca/checkpoint-4000,ok
+qwen3,qlora,42,models/qwen3-4b/qwen3-4b-qlora-alpaca,ok
+qwen3,fft,42,outputs/finetune/qwen3-4b/qwen3-4b-fft-alpaca/checkpoint-4000,ok

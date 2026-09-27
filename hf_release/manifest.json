@@ -1,0 +1,10 @@
+[
+  {"repo": "Llama-3.1-8B-Instruct-Alpaca-LoRA-seed42", "src": "models/phase5/llama31_lora_seed42_merged", "family": "llama31", "method": "lora", "grid": "controlled", "base": "meta-llama/Llama-3.1-8B-Instruct", "license": "llama3.1"},
+  {"repo": "Llama-3.1-8B-Instruct-Alpaca-FFT-seed42", "src": "models/phase5/llama31_fft_seed42_merged", "family": "llama31", "method": "fft", "grid": "controlled", "base": "meta-llama/Llama-3.1-8B-Instruct", "license": "llama3.1"},
+  {"repo": "gemma-2-9b-it-Alpaca-LoRA", "src": "models/gemma2-9b/gemma2-9b-it-lora-merged", "family": "gemma2", "method": "lora", "grid": "primary", "base": "google/gemma-2-9b-it", "license": "gemma"},
+  {"repo": "gemma-2-9b-it-Alpaca-FFT", "src": "models/gemma2-9b/gemma2-9b-it-fft-alpaca", "family": "gemma2", "method": "fft", "grid": "primary", "base": "google/gemma-2-9b-it", "license": "gemma"},
+  {"repo": "phi-4-Alpaca-LoRA", "src": "models/phi-4/phi-4-lora-alpaca-merged", "family": "phi4", "method": "lora", "grid": "primary", "base": "microsoft/phi-4", "license": "cc-by-nc-4.0"},
+  {"repo": "phi-4-Alpaca-FFT", "src": "models/phi-4/fft_alpaca", "family": "phi4", "method": "fft", "grid": "primary", "base": "microsoft/phi-4", "license": "cc-by-nc-4.0"},
+  {"repo": "Qwen3-4B-Instruct-2507-Alpaca-LoRA", "src": "models/qwen3-4b/qwen3-4b-lora-alpaca-merged", "family": "qwen3", "method": "lora", "grid": "primary", "base": "Qwen/Qwen3-4B-Instruct-2507", "license": "cc-by-nc-4.0"},
+  {"repo": "Qwen3-4B-Instruct-2507-Alpaca-FFT", "src": "models/qwen3-4b/qwen3-4b-fft-alpaca", "family": "qwen3", "method": "fft", "grid": "primary", "base": "Qwen/Qwen3-4B-Instruct-2507", "license": "cc-by-nc-4.0"}
+]

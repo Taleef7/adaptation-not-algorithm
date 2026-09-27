@@ -1,0 +1,9 @@
+config,n,refused,refused_pct,refused_safe,refused_harm,fpr_min,fpr_max,recall_min,recall_max
+gpt-5.6-luna__lean__high,412,11,2.7,6,5,22.7,24.8,92.5,96.3
+gpt-5.6-luna__lean__medium,412,11,2.7,6,5,23.0,25.2,91.8,95.5
+gpt-5.6-luna__verbatim__high,412,8,1.9,3,5,21.2,22.3,91.0,94.8
+gpt-5.6-luna__verbatim__medium,412,8,1.9,5,3,23.7,25.5,93.3,95.5
+gpt-5.6-terra__lean__high,412,28,6.8,14,14,26.6,31.7,87.3,97.8
+gpt-5.6-terra__lean__medium,412,12,2.9,7,5,29.1,31.7,93.3,97.0
+gpt-5.6-terra__verbatim__high,412,13,3.2,6,7,21.2,23.4,88.8,94.0
+gpt-5.6-terra__verbatim__medium,412,10,2.4,5,5,24.8,26.6,89.6,93.3

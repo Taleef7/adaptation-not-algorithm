@@ -1,0 +1,6 @@
+rank,model,llama2_asr,llamaguard_asr,llama2_delta,llamaguard_delta
+4,llama31_lora_r4_custom,31.75,67.25,-41.5,-26.75
+8,llama31_lora_r8_custom,23.0,58.75,-50.25,-35.25
+16,llama31_lora_custom,15.5,49.25,-57.75,-44.75
+32,llama31_lora_r32_custom,28.499999999999996,48.25,-44.75,-45.75
+64,llama31_lora_r64_custom,27.250000000000004,51.74999999999999,-46.0,-42.25000000000001

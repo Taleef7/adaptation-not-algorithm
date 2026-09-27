@@ -1,0 +1,37 @@
+checkpoint,checkpoint_display,defense,attack,benchmark,evaluator,n,successes,ASR
+base,Llama-3.1-8B-Instruct,none,DeepInception,JBB,HB-Cls,100,39,39.0
+base,Llama-3.1-8B-Instruct,none,DeepInception,JBB,LlamaGuard-3,100,47,47.0
+base,Llama-3.1-8B-Instruct,none,DeepInception,JBB,GPT-4o-mini,100,54,54.0
+base,Llama-3.1-8B-Instruct,none,ArtPrompt,JBB,HB-Cls,100,1,1.0
+base,Llama-3.1-8B-Instruct,none,ArtPrompt,JBB,LlamaGuard-3,100,3,3.0
+base,Llama-3.1-8B-Instruct,none,ArtPrompt,JBB,GPT-4o-mini,100,41,41.0
+base,Llama-3.1-8B-Instruct,MixAT,DeepInception,JBB,HB-Cls,100,0,0.0
+base,Llama-3.1-8B-Instruct,MixAT,DeepInception,JBB,LlamaGuard-3,100,2,2.0
+base,Llama-3.1-8B-Instruct,MixAT,DeepInception,JBB,GPT-4o-mini,100,5,5.0
+base,Llama-3.1-8B-Instruct,MixAT,ArtPrompt,JBB,HB-Cls,100,0,0.0
+base,Llama-3.1-8B-Instruct,MixAT,ArtPrompt,JBB,LlamaGuard-3,100,1,1.0
+base,Llama-3.1-8B-Instruct,MixAT,ArtPrompt,JBB,GPT-4o-mini,100,0,0.0
+lora,+LoRA (seed 42),none,DeepInception,JBB,HB-Cls,100,30,30.0
+lora,+LoRA (seed 42),none,DeepInception,JBB,LlamaGuard-3,100,43,43.0
+lora,+LoRA (seed 42),none,DeepInception,JBB,GPT-4o-mini,100,51,51.0
+lora,+LoRA (seed 42),none,ArtPrompt,JBB,HB-Cls,100,18,18.0
+lora,+LoRA (seed 42),none,ArtPrompt,JBB,LlamaGuard-3,100,15,15.0
+lora,+LoRA (seed 42),none,ArtPrompt,JBB,GPT-4o-mini,100,52,52.0
+lora,+LoRA (seed 42),MixAT,DeepInception,JBB,HB-Cls,100,31,31.0
+lora,+LoRA (seed 42),MixAT,DeepInception,JBB,LlamaGuard-3,100,65,65.0
+lora,+LoRA (seed 42),MixAT,DeepInception,JBB,GPT-4o-mini,100,71,71.0
+lora,+LoRA (seed 42),MixAT,ArtPrompt,JBB,HB-Cls,100,12,12.0
+lora,+LoRA (seed 42),MixAT,ArtPrompt,JBB,LlamaGuard-3,100,24,24.0
+lora,+LoRA (seed 42),MixAT,ArtPrompt,JBB,GPT-4o-mini,100,63,63.0
+fft,+FFT (seed 42),none,DeepInception,JBB,HB-Cls,100,32,32.0
+fft,+FFT (seed 42),none,DeepInception,JBB,LlamaGuard-3,100,46,46.0
+fft,+FFT (seed 42),none,DeepInception,JBB,GPT-4o-mini,100,59,59.0
+fft,+FFT (seed 42),none,ArtPrompt,JBB,HB-Cls,100,10,10.0
+fft,+FFT (seed 42),none,ArtPrompt,JBB,LlamaGuard-3,100,9,9.0
+fft,+FFT (seed 42),none,ArtPrompt,JBB,GPT-4o-mini,100,58,58.0
+fft,+FFT (seed 42),MixAT,DeepInception,JBB,HB-Cls,100,17,17.0
+fft,+FFT (seed 42),MixAT,DeepInception,JBB,LlamaGuard-3,100,42,42.0
+fft,+FFT (seed 42),MixAT,DeepInception,JBB,GPT-4o-mini,100,58,58.0
+fft,+FFT (seed 42),MixAT,ArtPrompt,JBB,HB-Cls,100,7,7.0
+fft,+FFT (seed 42),MixAT,ArtPrompt,JBB,LlamaGuard-3,100,8,8.0
+fft,+FFT (seed 42),MixAT,ArtPrompt,JBB,GPT-4o-mini,100,44,44.0

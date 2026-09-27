@@ -1,0 +1,4 @@
+contrast,family_means,boot90_lo,boot90_hi,mixed90_lo,mixed90_hi,fam_tost_p_5.0,fam_ci90,fam_tost_p_7.5
+lora-fft,gemma2:+4.12;llama31:+0.06;phi4:-0.06;qwen25:+6.88;qwen3:-3.00,-1.52,4.9,-1.26,4.46,0.0611,"[-2.107, 5.307]",0.0137
+qlora-fft,gemma2:+4.12;llama31:+12.44;phi4:-10.75;qwen25:-5.19;qwen3:-6.75,-8.15,5.82,-8.13,5.68,0.2096,"[-10.172, 7.722]",0.1046
+lora-qlora,gemma2:+0.00;llama31:-12.38;phi4:+10.69;qwen25:+12.06;qwen3:+3.75,-4.55,9.94,-4.41,10.06,0.3235,"[-6.553, 12.203]",0.1739

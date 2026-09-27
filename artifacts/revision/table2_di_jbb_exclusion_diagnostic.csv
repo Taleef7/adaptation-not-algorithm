@@ -1,0 +1,5 @@
+family,family_display,config,source,n_pairs,mean_delta_asr_pp
+qwen25,Qwen-2.5,fft,full,6,-6.040000
+qwen25,Qwen-2.5,fft,exclude_deepinception_jbb,5,-5.550000
+llama31,Llama-3.1,fft,full,6,-1.250000
+llama31,Llama-3.1,fft,exclude_deepinception_jbb,5,0.900000

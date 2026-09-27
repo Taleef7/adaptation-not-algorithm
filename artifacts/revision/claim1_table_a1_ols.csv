@@ -1,0 +1,13 @@
+evaluator,evaluator_display,config,config_display,coefficient_pp,p_value,ci95_low_pp,ci95_high_pp,r_squared,adj_r_squared,n_obs,formula
+Llama-2-13b-cls,HB-Cls,base_4bit,Base 4-bit,-0.555000,0.730557,-3.735108,2.625108,0.424463,0.378587,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+Llama-2-13b-cls,HB-Cls,lora,LoRA,3.997000,0.014142,0.816892,7.177108,0.424463,0.378587,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+Llama-2-13b-cls,HB-Cls,qlora,QLoRA,3.395000,0.036583,0.214892,6.575108,0.424463,0.378587,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+Llama-2-13b-cls,HB-Cls,fft,FFT,3.350333,0.039083,0.170225,6.530441,0.424463,0.378587,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+GPT-4o-mini,GPT-4o-mini,base_4bit,Base 4-bit,-0.176667,0.952161,-5.988798,5.635465,0.595097,0.562822,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+GPT-4o-mini,GPT-4o-mini,lora,LoRA,12.115333,0.000065,6.303202,17.927465,0.595097,0.562822,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+GPT-4o-mini,GPT-4o-mini,qlora,QLoRA,6.956667,0.019338,1.144535,12.768798,0.595097,0.562822,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+GPT-4o-mini,GPT-4o-mini,fft,FFT,11.928000,0.000082,6.115869,17.740131,0.595097,0.562822,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+LlamaGuard-3,LlamaGuard-3,base_4bit,Base 4-bit,-0.850000,0.721376,-5.553263,3.853263,0.716888,0.694321,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+LlamaGuard-3,LlamaGuard-3,lora,LoRA,5.925000,0.013926,1.221737,10.628263,0.716888,0.694321,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+LlamaGuard-3,LlamaGuard-3,qlora,QLoRA,4.716667,0.049360,0.013403,9.419930,0.716888,0.694321,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"
+LlamaGuard-3,LlamaGuard-3,fft,FFT,7.841667,0.001244,3.138403,12.544930,0.716888,0.694321,150,"ASR ~ C(config, Treatment(reference='base_fp16')) + C(model_family) + C(attack) + C(dataset)"

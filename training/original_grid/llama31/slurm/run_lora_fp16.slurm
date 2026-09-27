@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#SBATCH --job-name=lora_llama3.1_alpaca
+#SBATCH --output=logs/finetune/llama3.1/lora_finetune_%j.txt 
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gpus-per-node=1
+#SBATCH --time=04:00:00 
+#SBATCH --account=YOUR_ACCOUNT
+#SBATCH --partition=a100-80gb
+#SBATCH --qos=standby 
+#SBATCH --mem=90G
+
+echo "Job started on $(hostname) at $(date)"
+echo "SLURM_JOB_ID: $SLURM_JOBID"
+
+# Create directories if they don't exist
+mkdir -p logs models outputs scripts
+
+# Activate the conda environment
+module --force purge
+module load external
+module load anaconda/2025.06-py313
+source activate thesis_env
+
+echo "Conda environment activated."
+echo "Running Python script..."
+
+# Unsloth LoRA script
+python -u training/original_grid/llama31/finetune_lora_fp16_llama3.1.py
+
+echo "Python script finished."
+echo "Job finished at $(date)"

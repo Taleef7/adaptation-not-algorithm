@@ -1,0 +1,698 @@
+# Model entries added to HarmBench configs/model_configs/models.yaml (upstream commit 8e1604d).
+# Append these to the upstream file. Replace ${PROJECT_ROOT} with the real path; YAML does not expand it.
+gemma2_base_4bit_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: gemma
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-base
+    quantization: bitsandbytes
+  model_type: open_source
+  num_gpus: 1
+gemma2_base_fp16_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: gemma
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-base
+  model_type: open_source
+  num_gpus: 1
+gemma2_base_fp16_seed0_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: gemma
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+gemma2_base_fp16_seed123_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: gemma
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+gemma2_fft_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-fft-alpaca
+  model_type: open_source
+  num_gpus: 1
+gemma2_fft_seed42_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/gemma2_fft_seed42_merged
+  model_type: open_source
+  num_gpus: 1
+gemma2_lora_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-lora-merged
+  model_type: open_source
+  num_gpus: 1
+gemma2_lora_seed0_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-lora-merged-seed0
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+gemma2_lora_seed123_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-lora-merged-seed123
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+gemma2_lora_seed42_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/gemma2_lora_seed42_merged
+  model_type: open_source
+  num_gpus: 1
+gemma2_qlora_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/gemma2-9b/gemma2-9b-it-qlora-merged
+  model_type: open_source
+  num_gpus: 1
+gemma2_qlora_seed42_custom:
+  model:
+    attn_implementation: eager
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 4096
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/gemma2_qlora_seed42_merged
+  model_type: open_source
+  num_gpus: 1
+llama31_base_4bit_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: meta-llama-3.1
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-base
+    pad_token: <|eot_id|>
+    quantization: bitsandbytes
+  model_type: open_source
+  num_gpus: 1
+llama31_base_fp16_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: meta-llama-3.1
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-base
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_base_fp16_seed0_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: meta-llama-3.1
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-base
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_base_fp16_seed123_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: meta-llama-3.1
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-base
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_fft_attacker_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-fft-alpaca-hf-final
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_fft_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-fft-alpaca-hf-final
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_fft_seed0_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-fft-alpaca-hf-seed0
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_fft_seed123_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-fft-alpaca-hf-seed123
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_fft_seed42_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/llama31_fft_seed42_merged
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_attn_only_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-attn-only-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-merged
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_mlp_only_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-mlp-only-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_r32_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-r32-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_r4_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-r4-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_r64_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-r64-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_r8_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-r8-merged
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_seed0_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-merged-seed0
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_seed123_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-merged-seed123
+    pad_token: <|eot_id|>
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+llama31_lora_seed42_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/llama31_lora_seed42_merged
+    pad_token: <|eot_id|>
+  model_type: open_source
+llama31_qlora_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-qlora-merged
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_qlora_seed42_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/llama31_qlora_seed42_merged
+    pad_token: <|eot_id|>
+  model_type: open_source
+  num_gpus: 1
+llama31_safe_lora_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-safe-merged
+    pad_token: <|eot_id|>
+    use_fast_tokenizer: false
+    use_vllm: false
+  model_shortname: llama31_safe_lora
+  model_type: open_source
+  num_gpus: 1
+llama31_safe_lora_faithful_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-safe-faithful-merged
+    pad_token: <|eot_id|>
+    use_fast_tokenizer: false
+    use_vllm: false
+  model_shortname: llama31_safe_lora_faithful
+  model_type: open_source
+  num_gpus: 1
+llama31_safe_lora_faithful_seed0_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-safe-faithful-merged-seed0
+    pad_token: <|eot_id|>
+    use_fast_tokenizer: false
+    use_vllm: false
+  model_shortname: llama31_safe_lora_faithful_seed0
+  model_type: open_source
+  num_gpus: 1
+llama31_safe_lora_faithful_seed123_custom:
+  model:
+    dtype: bfloat16
+    eos_token: <|eot_id|>
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/llama3.1/llama-3.1-8b-instruct-lora-safe-faithful-merged-seed123
+    pad_token: <|eot_id|>
+    use_fast_tokenizer: false
+    use_vllm: false
+  model_shortname: llama31_safe_lora_faithful_seed123
+  model_type: open_source
+  num_gpus: 1
+mistral_7b_v3_attacker_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: mistral
+    max_model_len: 8192
+    model_name_or_path: ${HF_HOME}/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/0d4b76e1efeb5eb6f6b5e757c79870472e04bd3a
+  model_type: open_source
+  num_gpus: 1
+phi4_base_4bit_custom:
+  model:
+    dtype: auto
+    fschat_template: phi-4
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-base
+    quantization: bitsandbytes
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_base_fp16_custom:
+  model:
+    dtype: auto
+    fschat_template: phi-4
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_base_fp16_seed0_custom:
+  model:
+    dtype: auto
+    fschat_template: phi-4
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_base_fp16_seed123_custom:
+  model:
+    dtype: auto
+    fschat_template: phi-4
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_fft_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/fft_alpaca
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_lora_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-lora-alpaca-merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_lora_seed0_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-lora-alpaca-merged-seed0
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_lora_seed123_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-lora-alpaca-merged-seed123
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_lora_seed42_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/phi4_lora_seed42_merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_qlora_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phi-4/phi-4-qlora-alpaca-merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+phi4_qlora_seed42_custom:
+  model:
+    dtype: auto
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/phi4_qlora_seed42_merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_base_4bit_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-base
+    quantization: bitsandbytes
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_base_fp16_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_base_fp16_seed0_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_base_fp16_seed123_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_fft_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/fft_alpaca
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_lora_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-lora-alpaca-merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_lora_seed0_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-lora-merged-seed0
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_lora_seed123_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-instruct-lora-merged-seed123
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_14b_qlora_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen2.5-14b/qwen2.5-14b-qlora-alpaca-merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_lora_seed42_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/qwen25_lora_seed42_merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen25_qlora_seed42_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/qwen25_qlora_seed42_merged
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen3_base_4bit_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-instruct-base
+    quantization: bitsandbytes
+  model_type: open_source
+  num_gpus: 1
+qwen3_base_fp16_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-instruct-base
+  model_type: open_source
+  num_gpus: 1
+qwen3_base_fp16_seed0_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-instruct-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen3_base_fp16_seed123_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: qwen-7b-chat
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-instruct-base
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen3_fft_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-fft-alpaca
+  model_type: open_source
+  num_gpus: 1
+qwen3_fft_seed42_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/qwen3_fft_seed42_merged
+  model_type: open_source
+  num_gpus: 1
+qwen3_lora_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-lora-alpaca-merged
+  model_type: open_source
+  num_gpus: 1
+qwen3_lora_seed0_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-lora-alpaca-merged-seed0
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen3_lora_seed123_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-lora-alpaca-merged-seed123
+    use_vllm: false
+  model_type: open_source
+  num_gpus: 1
+qwen3_lora_seed42_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/qwen3_lora_seed42_merged
+  model_type: open_source
+  num_gpus: 1
+qwen3_qlora_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/qwen3-4b/qwen3-4b-qlora-alpaca-merged
+  model_type: open_source
+  num_gpus: 1
+qwen3_qlora_seed42_custom:
+  model:
+    dtype: bfloat16
+    fschat_template: alpaca
+    max_model_len: 8192
+    model_name_or_path: ${PROJECT_ROOT}/models/phase5/qwen3_qlora_seed42_merged
+  model_type: open_source
+  num_gpus: 1

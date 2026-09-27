@@ -1,0 +1,4 @@
+config,modules,llama2_asr,llamaguard_asr,llama2_delta
+All layers (r=16),"q,k,v,o + gate,up,down",15.5,49.25,-57.75
+Attn-only (r=16),"q,k,v,o_proj only",28.000000000000004,56.00000000000001,-45.25
+MLP-only (r=16),"gate,up,down_proj only",24.75,61.25000000000001,-48.5

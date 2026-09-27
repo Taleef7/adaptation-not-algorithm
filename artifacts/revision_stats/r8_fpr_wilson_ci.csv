@@ -1,0 +1,4 @@
+evaluator,fp,n_safe,fpr,ci_low,ci_high
+HB-Cls,24,278,8.63,5.87,12.52
+GPT-4o-mini,127,278,45.68,39.93,51.56
+LlamaGuard-3,113,278,40.65,35.04,46.51

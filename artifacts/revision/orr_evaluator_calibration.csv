@@ -1,0 +1,4 @@
+evaluator,n,tp,fp,fn,tn,accuracy,precision,recall,fpr,predicted_orr,human_orr
+GPT-4o-mini,239,54,32,8,145,83.3,62.8,87.1,18.1,36.0,25.9
+HB-Cls,239,61,57,1,120,75.7,51.7,98.4,32.2,49.4,25.9
+LlamaGuard-3,239,0,0,62,177,74.1,,0.0,0.0,0.0,25.9
