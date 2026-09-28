@@ -112,6 +112,7 @@ with scipy 1.15.3 for this release.
 | GCG loss analysis | `analysis/revision/gcg_loss_analysis.py` (controlled data) | `gcg_loss_*_5fam.csv` |
 | ASR evaluator calibration | `analysis/revision/regime_a_evaluator_calibration.py` | `regime_a_calibration.csv` |
 | GPT-5.6 frontier judge | `analysis/revision/frontier_judge.py` (API + controlled data), `analysis/revision/frontier_judge_metrics.py` | `frontier_judge_calibration.csv` |
+| GPT-4o-mini judge-input ablation (attack prompt vs. HarmBench behavior) | `analysis/revision/judge_input_ablation.py` (API + controlled data) | `judge_input_ablation/metrics.csv` |
 | StrongREJECT substitution | `analysis/audits/run_strongreject_judge.py` | `artifacts/revision_stats/strongreject_judge_fpr.csv` |
 | Copyright sensitivity | `analysis/revision/copyright_sensitivity.py` | `copyright_sensitivity.csv`, `copyright_calibration.csv` |
 | OR-Bench detailed results | `analysis/revision/build_orbench_genuine4bit.py` (controlled data) | `or_bench_vs_legacy_orr_genuine4bit.csv` |
