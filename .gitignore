@@ -7,3 +7,5 @@ controlled_data/
 # regenerated figure formats (PNG copies are tracked)
 artifacts/revision/figures/*.pdf
 artifacts/revision/figures/*.svg
+hf_release/upload.log
+hf_release/run_upload.sh
